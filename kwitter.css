@@ -1,0 +1,10 @@
+.logout{
+  right:0;  
+  margin-left:600;
+}
+body{
+    background-color: khaki;
+}
+#roomname{
+    width:600px;
+}

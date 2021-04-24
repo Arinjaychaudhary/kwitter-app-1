@@ -5,8 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <link rel="stylesheet" href="kwitter.css">
 </head>
 <body>
-    
+    <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger logout" onclick=logout()>Logout</button>
+    <center>
+        <h1>Kwitter</h1>
+        <sup><img src="icons8-chat-64.png"></sup>
+        <br>
+        <br>
+        <div class="form-group">
+        <h3 id="username"  ></h3>
+        <br>
+        <h3>Add room</h3>
+    <input class="form-control" id="roomname" placeholder="Room name">
+    <br>
+    <button type="submit" onclick=addRoom() >Add room</button>
+    </div>
+    <br>
+    <h3># TRENDING ROOMS</h3>
+    <br>
+    <div class="form-group">
+
+    </div>
+    </center> 
+    <script src="kwitter.js" ></script>
 </body>
 </html>
