@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kwitter</title>
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -14,27 +15,13 @@
     <link rel="stylesheet" href="kwitter.css">
 </head>
 <body>
-    <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger logout" onclick=logout()>Logout</button>
-    <center>
-        
-        <sup><img src="Kwitter_free-file.png" width=250 height=300></sup>
-        <br>
-        <br>
-        <div class="form-group">
-        <h3 id="user_name" style="color: white;"  ></h3>
-        <br>w
-        <h3 style="color: white;">Add room</h3>
-    <input class="form-control" id="roomname" placeholder="Room name">
-    <br>
-    <button type="submit" onclick=addroom() >Add room</button>
-    </div>
-    <br>
-    <h3># TRENDING ROOMS</h3>
-    <br>
-    <div id="output" class="form-group">
+ <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger logout" onclick=logout()>Logout</button>
+<center>
+    <h1>Message page</h1>
+    <div id="output"></div>
+    <input id="msg" class="form-control" placeholder="Message">
+    <button class="btn btn-success">Send</button>
+</center>
 
-    </div>
-    </center> 
-    <script src="kwitter.js" ></script>
 </body>
 </html>

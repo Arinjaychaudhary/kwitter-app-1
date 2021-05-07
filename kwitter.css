@@ -1,10 +1,11 @@
 .logout{
-  right:0;  
-  margin-left:600;
-}
-body{
-    background-color: khaki;
-}
-#roomname{
-    width:600px;
+    right:0;  
+    margin-left:600;
+  }
+  body{
+      background-image:url("gifbksw.gif") ;
+      background-size: cover;
+  }
+  #roomname{
+      width:600px;
 }
