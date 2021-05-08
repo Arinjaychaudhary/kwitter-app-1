@@ -1,15 +1,14 @@
 var firebaseConfig = {
-  apiKey: "AIzaSyCJKFD1_NBOJtW8cvol6xhDYToT32iideo",
-  authDomain: "kwtterprojectlaptop.firebaseapp.com",
-  databaseURL: "https://kwtterprojectlaptop-default-rtdb.firebaseio.com/",
-  projectId: "kwtterprojectlaptop",
-  storageBucket: "kwtterprojectlaptop.appspot.com",
-  messagingSenderId: "403322413709",
-  appId: "1:403322413709:web:c4064207d61163f5db78c4",
-  measurementId: "G-NV9358JJ31"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+    apiKey: "AIzaSyD9G5E02SaXL443V2_aNWycoMWEPSrCa0A",
+    authDomain: "kwitter-de2b1.firebaseapp.com",
+    databaseURL: "https://kwitter-de2b1-default-rtdb.firebaseio.com",
+    projectId: "kwitter-de2b1",
+    storageBucket: "kwitter-de2b1.appspot.com",
+    messagingSenderId: "212216083990",
+    appId: "1:212216083990:web:8e5f50e944b14964502737"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
 	user_name = localStorage.getItem("user_name");
 	room_name = localStorage.getItem("room_name");
@@ -32,10 +31,10 @@ function getData() { firebase.database().ref("/"+room_name).on('value', function
 //Start code
          console.log(firebase_message_id);
 	       console.log(message_data);
-	       name = message_data['name'];
+	      user_name = message_data['name'];
 	       message = message_data['message'];
          like = message_data['like'];
-         name_with_tag = "<h4> "+ name +"<img class='user_tick' src='tick.png'></h4>";
+         name_with_tag = "<h4> "+ user_name +"<img class='user_tick' src='tick.png'></h4>";
          message_with_tag = "<h4 class='message_h4'>" + message + "</h4>";
 like_button ="<button class='btn btn-warning' id="+firebase_message_id+" value="+like+" onclick='updateLike(this.id)'>";
          span_with_tag = "<span class='glyphicon glyphicon-thumbs-up'>Like: "+ like +"</span></button><hr>";

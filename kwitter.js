@@ -1,15 +1,14 @@
 var firebaseConfig = {
-  apiKey: "AIzaSyCJKFD1_NBOJtW8cvol6xhDYToT32iideo",
-  authDomain: "kwtterprojectlaptop.firebaseapp.com",
-  databaseURL: "https://kwtterprojectlaptop-default-rtdb.firebaseio.com/",
-  projectId: "kwtterprojectlaptop",
-  storageBucket: "kwtterprojectlaptop.appspot.com",
-  messagingSenderId: "403322413709",
-  appId: "1:403322413709:web:c4064207d61163f5db78c4",
-  measurementId: "G-NV9358JJ31"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+    apiKey: "AIzaSyD9G5E02SaXL443V2_aNWycoMWEPSrCa0A",
+    authDomain: "kwitter-de2b1.firebaseapp.com",
+    databaseURL: "https://kwitter-de2b1-default-rtdb.firebaseio.com",
+    projectId: "kwitter-de2b1",
+    storageBucket: "kwitter-de2b1.appspot.com",
+    messagingSenderId: "212216083990",
+    appId: "1:212216083990:web:8e5f50e944b14964502737"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
 
 
@@ -22,7 +21,7 @@ firebase.initializeApp(firebaseConfig);
 var room_name=document.getElementById("roomname").value;
   function addroom(){
       localStorage.setItem("room_name",room_name);
-firebase.database().ref(user_name).child(room_name).update({
+firebase.database().ref(user_name).update({
   purpose:"chat"
 });
       
